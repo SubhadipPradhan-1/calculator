@@ -1,0 +1,40 @@
+<html>
+    <head><title>calculator</title>
+    </head>
+    <body>
+        <center>
+            <input type="number" placeholder="Enter first number"  id="fst"/>
+            <select id="operand">
+                <option>+</option>
+                <option>-</option>
+                <option>X</option>
+                <option>/</option>
+            </select>
+            <input type="number" placeholder="Enter second number" id="second">
+            <br/>
+            <br/>
+            <button  onclick="cal()">Calculate</button>
+            <input type="text" readonly="" id="res2"/>
+        </center>
+    </body>
+    <script>
+        function cal(){
+            var num1=document.getElementById("fst").value;
+            var num2=document.getElementById("second").value;
+            var ope=document.getElementById("operand").value;
+            if(ope=='+'){
+                var res=(parseInt(num1)+parseInt(num2));
+            }
+            if(ope=='-'){
+                var res=(parseInt(num1)-parseInt(num2));
+            }
+            if(ope=='X'){
+               var res=(parseInt(num1)*parseInt(num2));
+            }
+            if(ope=='/'){
+                var res=(parseInt(num1)/parseInt(num2));
+            }
+            document.getElementById("res2").value=res;
+        }
+    </script>
+</html>

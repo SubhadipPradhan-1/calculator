@@ -1,0 +1,28 @@
+#big_div
+{
+    border:1px solid rgb(91, 90, 90);
+    height: 518px;
+    width:300px;
+    margin: auto;
+    border-radius: 5px;
+    
+}
+#small_div{
+    margin: 10px;
+    width: 85%;
+    font-size: 25px;
+    
+}
+#button_div{
+    margin:10px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+button{
+    height: 59px;;
+    width: 60px;
+    margin:6px;
+    font-size: 30px;
+}
